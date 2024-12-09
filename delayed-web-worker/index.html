@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Web Workers basic example</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Web Workers Example</h1>
+    <p>Toggle between `Main thread` and Web worker to see the implications of what a heavy calculation has on performance of your page.</p>
+
+    <form>
+      <label>
+        <input type="radio" name="mode" value="main-thread" checked>
+        Main thread
+      </label>
+      <label>
+        <input type="radio" name="mode" value="worker-thread">
+        Web Worker
+      </label>
+    </form>
+
+    <div class="controls" tabindex="0">
+      <form id="submit">
+        <div>
+          <label for="number1">Multiply number 1: </label>
+          <input type="text" id="number1" value="0" />
+        </div>
+        <div>
+          <label for="number2">Multiply number 2: </label>
+          <input type="text" id="number2" value="0" />
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+
+      <p class="result">Result: 0</p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
