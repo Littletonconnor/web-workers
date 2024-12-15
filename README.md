@@ -6,3 +6,5 @@ In this Repo, you'll find a few different examples demonstrating how to use Web 
 
 * **simple web worker** - Demonstrates the basic communication protocol for web workers.
 * **delayed web worker** - Demonstrates heavy computations and how they affect the critical rendering path.
+* **pixel web worker** - Demonstrates slow connections to domains that are not your own.
+* **partytown** - Demonstrates how to use partytown in simple setup.
