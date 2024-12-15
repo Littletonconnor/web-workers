@@ -6,11 +6,11 @@ self.addEventListener("message", (e) => {
 		// Replace the URL with your actual pixel URL
 		const pixelUrl = "https://httpbin.org/delay/10"; // Example URL with a 10-second delay
 
-		fetch(pixelUrl, {
-			method: "GET",
-			headers: {
-				"Content-Type": "text/javascript",
-			},
+	fetch(pixelUrl, {
+		method: "GET",
+		headers: {
+			"Content-Type": "text/javascript",
+		},
 		})
 			.then(() => {
 				// Notify the main thread about the successful pixel firing
